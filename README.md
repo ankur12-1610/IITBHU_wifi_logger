@@ -21,4 +21,4 @@ bash authetication.sh
   - Add this command to the opened file `@reboot <path_of_the_script>` <br></br>
   > ![Screenshot from 2023-01-02 13-56-58](https://user-images.githubusercontent.com/76884959/210208364-8179b8fc-9be0-490a-93f4-a65090a23bc5.png)
 
-And voila you've added an automated wifi login system to you pc.
+And voila you've added an automated wifi login system in your system.
