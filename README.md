@@ -27,3 +27,6 @@ For Mac OS:
 - Follow this [link](https://stackoverflow.com/questions/6442364/running-script-upon-login-in-mac-os-x#:~:text=478-,Follow%20this%3A,-start%20Automator.app) to add the script on startup.
 
 And voila you've added an automated wifi login system in your system.
+
+---
+If you found this project helpful, please give a ⭐ from your ♥.
