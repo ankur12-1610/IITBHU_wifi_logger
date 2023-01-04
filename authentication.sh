@@ -4,10 +4,23 @@ firewall_url="http://192.168.249.1:1000"
 username="<ENTER YOUR USERNAME>"
 password="<ENTER YOUR PASSWORD>"
 
-interface="$(route | grep '^default' | grep -o '[^ ]*$')"
+pLength=${#password}
 
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    interface="$(route | grep '^default' | grep -o '[^ ]*$')"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    interface="$(route -n get default | grep 'interface:' | grep -o '[^ ]*$')"
+else
+    echo "Doesn't support your OS!"
+    exit 1
+fi
+
+echo "$OSTYPE": "$interface"
 echo "Username: $username"
-echo "Password: $password"
+echo -ne "Password:"
+for (( i=0; i<$pLength; i++ )); do
+    echo -ne "*"
+done
 
 get_login_page() {
     local output="$(curl --silent \
