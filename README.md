@@ -14,7 +14,7 @@ chmod +x ./authentication.sh
 ```
 - Execute the scrip with
 ```
-bash authetication.sh
+bash authentication.sh
 ```
 - Adding the script to crontab (so that the script runs after every reboot)
 
