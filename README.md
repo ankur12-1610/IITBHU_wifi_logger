@@ -12,7 +12,7 @@ sudo apt-get install net-tools
 ```
 chmod +x ./authentication.sh
 ```
-- Execute the scrip with
+- Execute the script with
 ```
 bash authentication.sh
 ```
